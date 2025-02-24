@@ -28,8 +28,10 @@ primer3_core [ --format_output ] [ --default_version=1|--default_version=2 ] [ -
 ```
 
 ### 1.1.1. Argumentos Principales:
+
 --about: Muestra la versión del programa y finaliza la ejecución.
 --default_version=n: Selecciona la versión de los valores predeterminados (n=2 es la actual y n=1 la antigua).
+
 --format_output: Produce una salida orientada al usuario en lugar de a programas.
 --strict_tags: Genera error si se encuentra alguna etiqueta desconocida en la entrada (o en el archivo de configuración).
 --p3_settings_file=<archivo>: Permite cargar parámetros globales desde un archivo, que pueden ser sobreescritos por la entrada.
