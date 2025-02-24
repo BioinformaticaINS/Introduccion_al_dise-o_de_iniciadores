@@ -37,6 +37,7 @@ drwxrwxr-x  3 ins_user ins_user 4,0K Kup  24 10:16 src
 
 drwxrwxr-x 13 ins_user ins_user  20K Kup  24 10:17 test
 
+Ahora Trabajemos con primer3
 
 # 1. Primer3
 Diseña cebadores de PCR a partir de secuencias de ADN. Es ampliamente utilizado (190 000 resultados en Google para "primer3").
