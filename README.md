@@ -30,15 +30,23 @@ primer3_core [ --format_output ] [ --default_version=1|--default_version=2 ] [ -
 ### 1.1.1. Argumentos Principales:
 
 --about: Muestra la versión del programa y finaliza la ejecución.
+
 --default_version=n: Selecciona la versión de los valores predeterminados (n=2 es la actual y n=1 la antigua).
 
 --format_output: Produce una salida orientada al usuario en lugar de a programas.
+
 --strict_tags: Genera error si se encuentra alguna etiqueta desconocida en la entrada (o en el archivo de configuración).
+
 --p3_settings_file=<archivo>: Permite cargar parámetros globales desde un archivo, que pueden ser sobreescritos por la entrada.
+
 --echo_settings_file: Imprime las etiquetas del archivo de configuración (no tiene efecto si se usa --format_output o no se provee un archivo).
+
 --io_version=4: Es el único valor válido, por compatibilidad.
+
 --output=<archivo>: Define el archivo donde se escribe la salida (por defecto, stdout).
+
 --error=<archivo>: Define el archivo donde se escriben los mensajes de error (por defecto, stderr).
+
 
 ### 1.1.2. Archivos de entrada y salida
 Se utiliza el formato Boulder-IO, en el cual cada registro está compuesto por pares TAG=VALOR y finaliza con una línea que contiene únicamente =.
