@@ -121,6 +121,18 @@ primer3_core --format_output ebola
 ```
 
 ## Resultados
+Veras un output como este:
+
+Using 0-based sequence positions
+
+OLIGO            start  len      tm     gc%  any_th  3'_th hairpin seq
+
+LEFT PRIMER        269   22   57.40   40.91   29.19  29.19   33.32 AGGTTAGTGATGTCGACAAACT
+
+RIGHT PRIMER       668   20   60.11   55.00    0.00   0.00   42.81 GCGAAAGTCGTTCCTCGGTA
+
+SEQUENCE SIZE: 2406
+
 
 ### Sección "ADDITIONAL OLIGOS"
 Esta sección muestra cada par de primers (izquierdo y derecho) junto con sus características:
@@ -187,6 +199,52 @@ Se refiere a los candidatos que cumplen con el criterio de estabilidad en el ext
 
 Pair Stats:
 Resume la evaluación de los pares de primers, indicando el total de pares considerados, cuántos fueron descartados por tener un tamaño de producto inaceptable y cuántos cumplen todos los criterios.
+
+
+## Analicemos la especifidad de mis primers
+Activemos el ambiente bioinfo
+```bash
+conda activate bioinfo
+```
+Instalemos el programa ispcr
+```bash
+conda install bioconda::ispcr
+```
+
+**Sintaxis**
+isPcr sequence_genome.fasta/fna   primers.txt   amplicons.txt
+
+_sequence_genome.fasta/fna_
+Creamos la carpeta data y entramos
+```bash
+mkdir data
+cd data/
+```
+Copia el archivo genome_ebola.fna del genoma del virus del ebola en data
+
+_primers.txt_
+Creamos el archivo txt que contiene los primers 
+El archivo de primers debe tener la siguiente estructura:
+NOME DO PRIMER <TAB> PRIMER1 <TAB> PRIMER2
+
+```bash
+nano primers.txt
+primer1 AGGTTAGTGATGTCGACAAACT GCGAAAGTCGTTCCTCGGTA
+```
+
+_Corremos isPcr para buscar amplicones
+```bash
+isPcr genome_ebola.fna primers.txt amplicons.txt
+```
+
+
+
+
+
+
+
+
+
 
 
 
