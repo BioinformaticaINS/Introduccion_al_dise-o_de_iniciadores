@@ -111,11 +111,9 @@ PRIMER_SECONDARY_STRUCTURE_ALIGNMENT=1
 =
 ```
 
+## Resultados
 
-
-
-
-Sección "ADDITIONAL OLIGOS"
+### Sección "ADDITIONAL OLIGOS"
 Esta sección muestra cada par de primers (izquierdo y derecho) junto con sus características:
 
 start: Posición inicial del primer en la secuencia.
@@ -135,27 +133,51 @@ hairpin: Evalúa la posibilidad de que el primer se doble y forme una estructura
 seq: La secuencia de nucleótidos del primer.
 
 
+### Sección: "Statistics"
+considered:
+Indica el número total de candidatos evaluados.
 
+too many Ns:
+Se refiere a los candidatos que contienen demasiadas bases ambiguas ("N").
 
+in target:
+Se refiere a los candidatos que se encuentran dentro de la región objetivo.
 
+in excl reg:
+Se refiere a los candidatos ubicados en regiones que se deben excluir.
 
+not ok reg:
+Se refiere a los candidatos que no cumplen con los criterios básicos establecidos.
 
+bad GC%:
+Indica los candidatos que presentan problemas con el porcentaje de bases G y C.
 
+tm GC clamp:
+Se relaciona con problemas en la estabilidad del "clamp" de GC en la temperatura de fusión.
 
+tm too low:
+Se refiere a los candidatos cuya temperatura de fusión es demasiado baja.
 
+tm too high:
+Se refiere a los candidatos cuya temperatura de fusión es demasiado alta.
 
+high any_th compl:
+Indica los candidatos con alta complementariedad en cualquier parte, lo que podría favorecer la formación de dímeros.
 
+high 3'_th compl:
+Indica los candidatos con alta complementariedad en el extremo 3', lo que puede provocar problemas en la amplificación.
 
+hairpin:
+Se refiere a los candidatos que tienen tendencia a formar estructuras secundarias tipo "hairpin" (autodoble).
 
+poly pin:
+Indica los candidatos afectados por repeticiones de nucleótidos que pueden inducir formación de estructuras indeseadas.
 
+high end stab ok:
+Se refiere a los candidatos que cumplen con el criterio de estabilidad en el extremo.
 
-
-
-
-
-
-
-
+Pair Stats:
+Resume la evaluación de los pares de primers, indicando el total de pares considerados, cuántos fueron descartados por tener un tamaño de producto inaceptable y cuántos cumplen todos los criterios.
 
 
 
