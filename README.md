@@ -89,12 +89,64 @@ creamos la carpeta donde vamos a trabajar y entramos en ella
 mkdir my_primers
 cd my_primers/
 ```
+Generamos el archivo input
+```bash
+nano ebola
+```
+Darle informacion de la secuencia y parametros que querramos configurar
+
+```bash
+SEQUENCE_ID=example
+
+SEQUENCE_TEMPLATE=GATGAAGATTAAGCCGACAGTGAGCGTAATCTTCATCTCTCTTAGATTATTTGTTTTCCAGAGTAGGGGTCGTCAGGTCCTTTTCAATCGTGTAACCAAAA>
+
+SEQUENCE_TARGET=350,292
+
+PRIMER_TASK=generic
+
+PRIMER_PICK_INTERNAL_OLIGO=0
+
+PRIMER_PICK_RIGHT_PRIMER=1
+
+PRIMER_OPT_SIZE=20
+
+PRIMER_MIN_SIZE=18
+
+PRIMER_MAX_SIZE=22
+
+PRIMER_PRODUCT_SIZE_RANGE=292-400
+
+PRIMER_EXPLAIN_FLAG=1
+
+PRIMER_SECONDARY_STRUCTURE_ALIGNMENT=1
+
+=
+```bash
 
 
 
-```bash
-```bash
-```bash
+
+
+Sección "ADDITIONAL OLIGOS"
+Esta sección muestra cada par de primers (izquierdo y derecho) junto con sus características:
+
+start: Posición inicial del primer en la secuencia.
+
+len: Longitud del primer (número de nucleótidos).
+
+tm: Temperatura de fusión (en °C), que indica a qué temperatura el primer se desnaturaliza.
+
+gc%: Porcentaje de bases G y C en el primer, lo que influye en la estabilidad.
+
+any_th: Puntaje que evalúa la complementariedad en cualquier parte del primer (riesgo de formar dímeros o estructuras indeseadas).
+
+3'_th: Puntaje específico para la complementariedad en el extremo 3' (muy crítico para evitar la formación de dímeros extendidos).
+
+hairpin: Evalúa la posibilidad de que el primer se doble y forme una estructura tipo "hairpin" (auto-doblamiento).
+
+seq: La secuencia de nucleótidos del primer.
+
+
 
 
 
