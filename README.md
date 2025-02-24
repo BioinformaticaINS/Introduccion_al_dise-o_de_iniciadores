@@ -13,6 +13,27 @@ cd primer3/src
 make
 make test
 ```
+Si visualizamos las carpetas clonadas dentro de primer3 deberiamos observar lo siguiente
+```bash
+ls -lh
+```
+total 68K
+-rwxrwxr-x  1 ins_user ins_user 3,5K Kup  24 10:14 cmp_settings.pl
+-rwxrwxr-x  1 ins_user ins_user 3,0K Kup  24 10:14 create_test_folders.pl
+-rw-rw-r--  1 ins_user ins_user  368 Kup  24 10:14 example
+drwxrwxr-x  2 ins_user ins_user 4,0K Kup  24 10:14 kmer_lists
+
+-rw-rw-r--  1 ins_user ins_user  18K Kup  24 10:14 LICENSE
+
+-rw-rw-r--  1 ins_user ins_user  589 Kup  24 10:14 README.md
+
+drwxrwxr-x  2 ins_user ins_user 4,0K Kup  24 10:14 settings_files
+
+drwxrwxr-x  3 ins_user ins_user 4,0K Kup  24 10:16 src
+
+drwxrwxr-x 13 ins_user ins_user  20K Kup  24 10:17 test
+
+
 
 
 # 1. Primer3
@@ -59,6 +80,19 @@ SEQUENCE_TARGET=37,21
 ...
 =
 ```
+
+### Diseñemos primers para el gen GP del virus del ébola
+creamos la carpeta donde vamos a trabajar y entramos en ella
+```bash
+mkdir my_primers
+cd my_primers/
+```
+
+
+
+```bash
+```bash
+```bash
 
 
 
