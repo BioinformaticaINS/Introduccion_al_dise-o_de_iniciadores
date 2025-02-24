@@ -215,6 +215,7 @@ conda install bioconda::ispcr
 isPcr sequence_genome.fasta/fna   primers.txt   amplicons.txt
 
 _sequence_genome.fasta/fna_
+
 Creamos la carpeta data y entramos
 ```bash
 mkdir data
@@ -223,6 +224,7 @@ cd data/
 Copia el archivo genome_ebola.fna del genoma del virus del ebola en data
 
 _primers.txt_
+
 Creamos el archivo txt que contiene los primers 
 El archivo de primers debe tener la siguiente estructura:
 NOME DO PRIMER <TAB> PRIMER1 <TAB> PRIMER2
@@ -232,7 +234,8 @@ nano primers.txt
 primer1 AGGTTAGTGATGTCGACAAACT GCGAAAGTCGTTCCTCGGTA
 ```
 
-_Corremos isPcr para buscar amplicones
+_Corremos isPcr para buscar amplicones_
+
 ```bash
 isPcr genome_ebola.fna primers.txt amplicons.txt
 ```
