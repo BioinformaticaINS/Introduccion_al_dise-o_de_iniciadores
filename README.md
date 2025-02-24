@@ -43,6 +43,8 @@ Ahora Trabajemos con primer3
 
 # 1. Primer3
 Diseña cebadores de PCR a partir de secuencias de ADN. Es ampliamente utilizado (190 000 resultados en Google para "primer3").
+Puedes buscar mas información en:
+https://primer3.org/manual.html#inputOutputConventions
 
 ## 1.1. Sintaxis
 La sintaxis general es:
