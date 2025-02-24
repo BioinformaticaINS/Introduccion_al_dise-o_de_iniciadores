@@ -37,6 +37,8 @@ drwxrwxr-x  3 ins_user ins_user 4,0K Kup  24 10:16 src
 
 drwxrwxr-x 13 ins_user ins_user  20K Kup  24 10:17 test
 
+
+
 Ahora Trabajemos con primer3
 
 # 1. Primer3
@@ -106,7 +108,6 @@ PRIMER_MIN_SIZE=18
 PRIMER_MAX_SIZE=22
 PRIMER_PRODUCT_SIZE_RANGE=292-400
 PRIMER_EXPLAIN_FLAG=1
-PRIMER_SECONDARY_STRUCTURE_ALIGNMENT=1
 =
 ```
 Corremos primer3 y visualizamos el resultado
